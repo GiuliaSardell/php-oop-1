@@ -1,7 +1,7 @@
 <?php
-
+require_once __DIR__."/databaseMovies.php";
 require_once __DIR__."/Movie.php";
-require_once __DIR__."/dababaseMovies.php";
+
 
 var_dump($titanic);
 var_dump($forrestGump);
@@ -21,8 +21,18 @@ var_dump($harryPotter);
 <body>
 
 <h1>Movies</h1>
-<h6><?php foreach($movie as $movies) : ?></h6>
-  $new_movie = 
+
+<?php foreach($movies as $movie) : 
+  $new_movie->title = $movie['title'];
+  $new_movie->country = $movie['country'];
+  $new_movie->year = $movie['year'];
+  ?>
+  <p><strong>Titolo: </strong> <?php echo $new_movie->title ?> </p>
+  <p><strong>Paese di produzione: </strong> <?php echo $new_movie->country ?> </p>
+  <p><strong>Anno di uscita: </strong> <?php echo $new_movie->year ?> </p>
+
+  <br>
+  <br>
 
 <?php endforeach ?>
 </body>

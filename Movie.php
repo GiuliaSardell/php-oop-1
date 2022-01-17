@@ -22,15 +22,15 @@ $titanic-> country = 'USA';
 // $titanic-> year = 1998;
 
 $forrestGump = new Movie('Forrest Gump', 1994);
-$forrestGump-> title = 'Forrest Gump';
+// $forrestGump-> title = 'Forrest Gump';
 $forrestGump-> country = 'USA';
-$forrestGump-> year = 1994;
+// $forrestGump-> year = 1994;
 
 
 $harryPotter = new Movie('Harry Potter', 2001);
-$harryPotter-> title = 'Harry Potter';
+// $harryPotter-> title = 'Harry Potter';
 $harryPotter-> country = 'Regno Unito';
-$harryPotter-> year = 2001;
+// $harryPotter-> year = 2001;
 
 
 
