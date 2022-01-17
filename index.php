@@ -26,11 +26,16 @@ var_dump($harryPotter);
   $new_movie->title = $movie['title'];
   $new_movie->country = $movie['country'];
   $new_movie->year = $movie['year'];
+  $new_movie->actors = $movie['actors'];
   ?>
   <p><strong>Titolo: </strong> <?php echo $new_movie->title ?> </p>
   <p><strong>Paese di produzione: </strong> <?php echo $new_movie->country ?> </p>
   <p><strong>Anno di uscita: </strong> <?php echo $new_movie->year ?> </p>
+  <p><strong>Attori principali: </strong> 
+  <?php foreach($new_movie->actors as $actor) : ?>
+  <?php echo $actor ?> </p>
 
+  <?php endforeach ?>
   <br>
   <br>
 
